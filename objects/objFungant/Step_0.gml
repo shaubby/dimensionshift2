@@ -38,5 +38,6 @@ if(active and aggro) {
 		else image_xscale=-1
 		
 	}
+	
 }
 

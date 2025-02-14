@@ -40,4 +40,5 @@ if(active){
 		}
 		kb=false
 	}
+	depth=9300-y
 }

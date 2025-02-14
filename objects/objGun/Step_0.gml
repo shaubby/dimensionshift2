@@ -18,3 +18,4 @@ if mouse_check_button(mb_left) and cd <=0{
 	cd=firerate;
 }
 if cd!=0 cd-=dt;
+depth=objPlayer.depth-1

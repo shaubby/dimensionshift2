@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objGrasses",
+  "%Name":"objLighting1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objGrasses",
+  "name":"objLighting1",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/Objects/FirstDimension/objects.yy",
+    "name":"FirstDimension",
+    "path":"folders/Objects/FirstDimension.yy",
   },
-  "parentObjectId":{
-    "name":"objFirstDimension",
-    "path":"objects/objFirstDimension/objFirstDimension.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprGrass",
-    "path":"sprites/sprGrass/sprGrass.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

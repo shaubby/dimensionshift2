@@ -8,8 +8,7 @@ flashcd=0;
 flashrate=4;
 hit=false;
 redFlashAlpha=0;
-ogdepth=depth;
-depth=ogdepth-y
+
 
 function takeHit(){
 	hit=true;
