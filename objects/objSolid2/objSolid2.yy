@@ -8,8 +8,8 @@
   "name":"objSolid2",
   "overriddenProperties":[],
   "parent":{
-    "name":"SecondDimension",
-    "path":"folders/Objects/SecondDimension.yy",
+    "name":"objects",
+    "path":"folders/Objects/SecondDimension/objects.yy",
   },
   "parentObjectId":{
     "name":"objBulletProof2",

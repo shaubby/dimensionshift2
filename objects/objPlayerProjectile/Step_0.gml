@@ -8,7 +8,7 @@ y+=vy
 time -=dt;
 if(objDimensions.currentdimension==1){
 	if(time <=0 or place_meeting(x, y ,objBulletProof1)) instance_destroy(self)
-	var enemy = instance_place(x, y, objEnemyParent1);
+	var enemy = instance_place(x, y, [objEnemyParent1,objFlyingEnemyParent1]);
 	if(enemy){
 		enemy.hp-=dmg
 		enemy.knockback(enemy.kblength, dir, enemy.kbspd);

@@ -1,0 +1,10 @@
+image_index=1;
+image_speed=0;
+encounter=false
+enemies1=ds_list_create();
+enemies2=ds_list_create();
+stage1=0;
+stage2=0;
+dimensionswitch=false;
+tocreate1 = ds_list_create();
+tocreate2 = ds_list_create();

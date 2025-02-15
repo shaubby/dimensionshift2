@@ -1,10 +1,17 @@
 if(active){
 	if !aggro {
-		if(!collision_line(x,y,objPlayerHitbox.x,objPlayerHitbox.y,objBulletProof2,false,true) and point_direction(x,y,objPlayerHitbox.x,objPlayerHitbox.y)<aggrodistance){
+		if(!collision_line(x,y,objPlayerHitbox.x,objPlayerHitbox.y,objBulletProof2,false,true) and point_distance(x,y,objPlayerHitbox.x,objPlayerHitbox.y)<aggrodistance){
 			aggro=true
 			sprite_index=aggroSprite;
 		}
 	}
+	var dt = delta_time/100000;
+	
+	if(timercd>=0){
+		timercd-=dt/5;
+		image_alpha+=dt/5;
+		if(timercd<=0) aggro=true;
+	} 
 
 	var dt = delta_time/100000;
 
@@ -27,7 +34,7 @@ if(active){
 		y+=knockbackvy*dt;
 		kbcd-=dt;
 		kbcurrentspd-=dt*kbchange
-		if(death) image_alpha-=1*dt;
+		if(death){ image_xscale-=.05*dt; image_yscale-=.05*dt}
 		if(kbcd<0)kbcd=0;
 	} else if(kbcd==0){
 		image_speed=defaultimagespeed;

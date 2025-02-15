@@ -18,3 +18,10 @@ function takeHit(){
 	flashing=true
 	redFlashAlpha=0.25;
 }
+function invincible(){
+	hit=true;
+	hitcd=10;
+	image_alpha=.3;
+	flashcd=flashrate;
+	flashing=true
+}

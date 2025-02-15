@@ -15,4 +15,4 @@ objFirstDimension.visible=false
 objSecondDimension.active=true
 objSecondDimension.visible=true
 
-
+objPlayer.invincible();

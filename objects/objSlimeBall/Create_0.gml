@@ -1,6 +1,6 @@
 event_inherited();
 path = path_add();
-spd=10
+spd=7
 hp=40
 kblength=2;
 kbspd=10;

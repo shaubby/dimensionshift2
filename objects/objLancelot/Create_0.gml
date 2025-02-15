@@ -2,7 +2,7 @@ event_inherited();
 path = path_add();
 spd=5
 walkspd=2;
-hp=100
+hp=40
 kblength=2;
 kbspd=10;
 gun=instance_create_layer(x, y, "Instances2", objLancelotGun)

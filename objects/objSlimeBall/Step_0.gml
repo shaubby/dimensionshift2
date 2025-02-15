@@ -19,7 +19,7 @@ if(active) {
 		}
 		if(!kb){
 			var dt = delta_time/100000;
-			mp_potential_settings(10,10,3,true)
+			mp_potential_settings(20,10,3,true)
 			mp_potential_step_object(objPlayerHitbox.x, objPlayerHitbox.y, dt*spd, objEnemyAvoidance2)
 			if(direction<90 or direction>270) image_xscale=1;
 			else image_xscale=-1;

@@ -14,6 +14,15 @@ kbchange=0;
 aggro=false;
 aggrodistance=200;
 death=false
+timer1=false;
+timer2=false;
+timercd=0;
+if(timer1=true) {
+	timercd=1;
+	image_alpha=0;
+	image_blend=c_white;
+	aggro=true;
+}
 
 function knockback(length, dir, kbspd) {
 	kb=true
@@ -23,7 +32,10 @@ function knockback(length, dir, kbspd) {
 	kbchange=kbspd/length;
 	image_speed=0
 	image_blend = c_red;
-	if(hp<=0)death=true;
+	if(hp<=0){
+		death=true;
+		kbdir=kbdir*2
+	}
 }
 function knockbackNoRed(length, dir, kbspd) {
 	kb=true

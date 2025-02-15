@@ -12,6 +12,7 @@ objSecondDimension.active=false
 objSecondDimension.visible=false
 
 flashAlpha=0;
-redFlash=0;
-maxcd=15
+redFlash=false;
+maxcd=10
 cd=0;
+

@@ -26,7 +26,7 @@
   ],
   "name":"sprFountain",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Objects",
     "path":"folders/Sprites/Objects.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":34,
+    "yorigin":67,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

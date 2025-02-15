@@ -21,11 +21,11 @@ if(active) {
 			var dt = delta_time/100000;
 			if(instance_exists(gun)){
 				if(gun.collisionline){
-					if(sprite_index==sprLancelotIdle) sprite_index=sprLancelotRun;
-					mp_potential_step_object(objPlayer.x, objPlayer.y, dt*spd, objEnemyAvoidance2);
+					//if(sprite_index==sprLancelotIdle) sprite_index=sprLancelotRun;
+					//mp_potential_step_object(objPlayer.x, objPlayer.y, dt*spd, objEnemyAvoidance2);
 				} else {
-					if(sprite_index==sprLancelotRun) sprite_index=sprLancelotIdle;
-					mp_potential_step_object(objPlayer.x, objPlayer.y, dt*walkspd, objEnemyAvoidance2);
+					//if(sprite_index==sprLancelotRun) sprite_index=sprLancelotIdle;
+					//mp_potential_step_object(objPlayer.x, objPlayer.y, dt*walkspd, objEnemyAvoidance2);
 				}
 				if(place_meeting(x,y,objPlayerHitbox) and !objPlayer.hit){
 					objPlayer.takeHit();

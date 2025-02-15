@@ -1,5 +1,5 @@
 var dt=delta_time/100000;
-if(active and owner.aggro) {
+if(owner.aggro and owner.active) {
 	x=owner.x
 	y=owner.y+4
 	var idealdir=point_direction(x, y, objPlayerHitbox.x, objPlayerHitbox.y);
@@ -23,7 +23,7 @@ if(active and owner.aggro) {
 	if(!collisionline and cd<=0) {
 		var projectile = instance_create_layer(x +lengthdir_x(4, image_angle),y+lengthdir_y(4,image_angle), "Instances2", objEnemyProjectile2);
 		projectile.dir=self.image_angle
-		projectile.spd=20
+		projectile.spd=10
 		projectile.time=100
 		projectile.dmg=10
 		projectile.image_angle=projectile.dir

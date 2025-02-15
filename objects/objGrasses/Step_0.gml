@@ -16,7 +16,7 @@ if(dir==1){
 }
 
 if(image_angle!=0){
-	if(!place_meeting(x,y,[objPlayer,objEnemyParent1])){
+	if(!place_meeting(x,y,[objPlayer,objEnemyParent1,objFlyingEnemyParent1])){
 		image_angle=0	
 	}
 }
