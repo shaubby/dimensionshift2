@@ -41,7 +41,6 @@ if(active and aggro) {
 				if(appear<=0) { 
 					cd=random_range(mincd,maxcd);
 					alarm_set(0, 1);
-					show_debug_message("laseR")
 				}
 				
 				

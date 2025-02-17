@@ -2,7 +2,7 @@ var dt=delta_time/100000;
 if(owner.active and owner.aggro) {
 	x=owner.x
 	y=owner.y-1
-	var idealdir=point_direction(x, y, objPlayerHitbox.x, objPlayerHitbox.y);
+	var idealdir=point_direction(x, y, objPlayerHitbox.x+objPlayer.vx*predictive, objPlayerHitbox.y+objPlayer.vy*predictive);
 	if(idealdir>image_angle){
 		if(idealdir-image_angle<180){
 			image_angle+=min(idealdir-image_angle,dt*maxrotspd);
@@ -19,11 +19,10 @@ if(owner.active and owner.aggro) {
 	//image_angle = point_direction(x, y, objPlayerHitbox.x, objPlayerHitbox.y);
 	if(objPlayerHitbox.x>x) image_yscale=1;
 	else image_yscale=-1;
-	collisionline=collision_line(x,y,objPlayerHitbox.x,objPlayerHitbox.y,objBulletProof1,true,true);
-	if(!collisionline and cd<=0 and image_angle=idealdir) {
-		var projectile = instance_create_layer(x +lengthdir_x(4, image_angle),y+lengthdir_y(4,image_angle), "Instances1", objEnemyProjectile1);
+	if(cd<=0) {
+		var projectile = instance_create_layer(x +lengthdir_x(4, image_angle),y+lengthdir_y(4,image_angle), "Instances1", objEnemyProjectileFlying1);
 		projectile.dir=self.image_angle
-		projectile.spd=13
+		projectile.spd=17
 		projectile.time=100
 		projectile.dmg=10
 		projectile.image_angle=projectile.dir
@@ -31,6 +30,7 @@ if(owner.active and owner.aggro) {
 		
 		cd=maxcd;
 	}
-	depth=owner.depth-2;
+	
 }
+depth=owner.depth-2;
 if(cd>0)cd-=dt;

@@ -1,7 +1,10 @@
 {
   "$GMTileSet":"v1",
   "%Name":"tileDungeon2",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[106,193,192,64,151,105,0,63,150,0,107,65,148,147,149,108,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_2","closed_edge":false,"name":"autotile_2","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[112,199,198,70,157,111,0,69,156,0,113,71,154,153,155,114,],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,

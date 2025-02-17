@@ -12,8 +12,8 @@
     "path":"folders/Objects/SecondDimension/objects.yy",
   },
   "parentObjectId":{
-    "name":"objBulletProof2",
-    "path":"objects/objBulletProof2/objBulletProof2.yy",
+    "name":"objParentSolid2",
+    "path":"objects/objParentSolid2/objParentSolid2.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -10,13 +10,24 @@ if mouse_check_button(mb_left) and cd <=0{
 	var direct = point_direction(x, y, mouse_x, mouse_y)
 	with(instance_create_layer(x+lengthdir_x(6, direct), y+lengthdir_y(6, direct), "Instances", objPlayerProjectile)) {
 		dir=direct
-		spd=20
+		spd=25
 		time=10
 		dmg=10
 		image_angle=dir
 	}
 	cd=firerate;
 }
+/*if mouse_check_button(mb_right) and cd <=0{
+	var direct = point_direction(x, y, mouse_x, mouse_y)
+	with(instance_create_layer(x+lengthdir_x(6, direct), y+lengthdir_y(6, direct), "Instances", objPlayerProjectile)) {
+		dir=direct
+		spd=25*2
+		time=10/2
+		dmg=1000
+		image_angle=dir
+	}
+	cd=firerate;
+}*/
 /*if mouse_check_button(mb_right) and cd <=0{
 	var direct = point_direction(x, y, mouse_x, mouse_y)
 	with(instance_create_layer(x+lengthdir_x(6, direct), y+lengthdir_y(6, direct), "Instances", objPlayerProjectile)) {

@@ -13,7 +13,7 @@ cd=random_range(0,maxcd);
 mindistance=75;
 maxdistance=150;
 
-laserchargecd=.1;
+laserchargecd=.06;
 lasercd=0;
 laser=-50000;
 gun=laser

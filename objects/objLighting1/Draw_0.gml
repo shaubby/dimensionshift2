@@ -25,6 +25,13 @@ if(instance_exists(objDimensions)){
 			
 			
 		}
+	} else {
+		with(objLight2){
+			gpu_set_blendmode(bm_subtract)
+			draw_sprite_ext(sprLight,0,x,y,2,2,0,c_white,1)
+			
+			
+		}
 	}
 }
 gpu_set_blendmode(bm_subtract)

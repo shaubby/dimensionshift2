@@ -8,10 +8,11 @@ layer_set_visible("DungeonTilesUnder", false)
 layer_set_visible("BackgroundDungeon", false)
 
 currentdimension=1;
-objFirstDimension.active=true
+
 objFirstDimension.visible=true
 
 objSecondDimension.active=false
 objSecondDimension.visible=false
+projectilesactive2 = false
 
 objPlayer.invincible();

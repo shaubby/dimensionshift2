@@ -11,6 +11,9 @@ objFirstDimension.visible=true
 objSecondDimension.active=false
 objSecondDimension.visible=false
 
+projectilesactive1 = true;
+projectilesactive2 = false;
+
 flashAlpha=0;
 redFlash=false;
 maxcd=10

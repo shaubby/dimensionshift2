@@ -89,8 +89,8 @@ if(hit){
 		hit=false;
 		image_alpha=1;
 	}
-	
-}
+	image_index=1;
+} else image_index=0;
 
 
 y += vy;

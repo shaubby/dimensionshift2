@@ -1,6 +1,9 @@
 event_inherited()
 cd=0
-maxcd=7;
+maxcd=5;
 collisionline=false;
-maxrotspd=20;
+maxrotspd=10;
+predictive=random_range(50,100);
+predictivecd=1000
+alarm_set(1,random_range(predictivecd-300,predictivecd+300));
 image_angle=270

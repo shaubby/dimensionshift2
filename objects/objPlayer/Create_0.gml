@@ -8,6 +8,8 @@ flashcd=0;
 flashrate=4;
 hit=false;
 redFlashAlpha=0;
+hitpoints=20;
+maxhitpoints=20;
 
 
 function takeHit(){
@@ -17,10 +19,11 @@ function takeHit(){
 	flashcd=flashrate;
 	flashing=true
 	redFlashAlpha=0.25;
+	hitpoints-=1
 }
 function invincible(){
 	hit=true;
-	hitcd=10;
+	hitcd=15;
 	image_alpha=.3;
 	flashcd=flashrate;
 	flashing=true

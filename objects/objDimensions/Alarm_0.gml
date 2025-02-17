@@ -12,7 +12,7 @@ objFirstDimension.active=false
 objFirstDimension.visible=false
 
 
-objSecondDimension.active=true
+projectilesactive1 = false
 objSecondDimension.visible=true
 
 objPlayer.invincible();

@@ -1,4 +1,4 @@
-if(objDimensions.currentdimension==2) {
+if(objDimensions.currentdimension==2 and objDimensions.projectilesactive2) {
 	var dt = delta_time/100000;
 	var stepspd = spd*dt;
 
@@ -18,3 +18,4 @@ if(objDimensions.currentdimension==2) {
 		instance_destroy(self)
 	}
 }
+depth=9300-y-3

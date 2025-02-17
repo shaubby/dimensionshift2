@@ -10,5 +10,6 @@ gun.owner=self;
 gun.x=x
 gun.y=y+4
 gun.depth=self.depth-1;
+alarm_set(0,1);
 sprite_index=sprLancelotIdle;
-aggroSprite=sprLancelotRun;
+aggroSprite=sprLancelotIdle;

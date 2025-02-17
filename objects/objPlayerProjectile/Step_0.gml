@@ -24,3 +24,4 @@ if(objDimensions.currentdimension==2){
 		instance_destroy(self)
 	}
 }
+depth=9300-y-3

@@ -7,7 +7,7 @@ if(active and aggro) {
 	instance_place_list(x,y,objHitbox1, collision, true);
 	if(!kb){
 		var dt = delta_time/100000;
-
+		mp_potential_settings(30, 10, 50, true)
 		mp_potential_step_object(objPlayerHitbox.x, objPlayerHitbox.y, dt*spd, objEnemyAvoidance1)
 		if(direction<90 or direction>270) image_xscale=1;
 		else image_xscale=-1

@@ -8,6 +8,7 @@ if(cd<=0){
 		if(keyboard_check_pressed(vk_space)){
 			if(!collide) {
 				alarm_set(0, 1);
+				alarm_set(2, 5/dt);
 				flashAlpha=.75;
 				cd=maxcd;
 			}
@@ -22,6 +23,7 @@ if(cd<=0){
 		if(keyboard_check_pressed(vk_space)){
 			if(!collide) {
 				alarm_set(1, 1);
+				alarm_set(3, 5/dt);
 				flashAlpha=.75;
 				cd=maxcd;
 			}

@@ -7,9 +7,9 @@ kbspd=10;
 
 aggroSprite=sprFungusIdle;
 
-maxcd=40;
-mincd=25;
+maxcd=30;
+mincd=20;
 cd=random_range(0,maxcd);
-mindistance=75;
-maxdistance=125;
+mindistance=80;
+maxdistance=120;
 
