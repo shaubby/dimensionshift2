@@ -16,7 +16,7 @@
 			//Fungants
 			ds_list_add(tocreate1, [1212,700,objFungant]);
 			encounter=true
-			objDimensions.maxcd=25;
+			objDimensions.maxcd=20;
 			stage1=1
 			
 			objPlayer.invincible();
@@ -134,7 +134,7 @@
 			with (instance) if place_meeting(x,y,[objPlayer,objEnemyParent1]) collide=true;
 			if(!collide){
 				with(instance){
-					timercd=3;
+					timercd=1.5;
 					image_alpha=0;
 					image_blend=c_white;
 					aggro=false;
@@ -146,6 +146,7 @@
 			} else {
 				instance_destroy(instance)
 			}
+			objDimensions.cd=objDimensions.maxcd/2
 		}
 	}
 	if(objDimensions.currentdimension==2 and encounter){
@@ -156,7 +157,7 @@
 			with (instance) if place_meeting(x,y,[objPlayer,objEnemyParent2]) collide=true;
 			if(!collide){
 				with(instance){
-					timercd=3;
+					timercd=1.5;
 					image_alpha=0;
 					image_blend=c_white;
 					aggro=false;
@@ -168,6 +169,7 @@
 			} else {
 				instance_destroy(instance)
 			}
+			objDimensions.cd=objDimensions.maxcd/2
 		}
 	}
 

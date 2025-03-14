@@ -3,20 +3,6 @@ event_inherited();
 if(active) {
 	if(aggro) {
 		var collision = ds_list_create();
-		if(instance_exists(gun)){
-		instance_place_list(x,y,objHitbox2, collision, true);
-			for(var i=0; i < ds_list_size(collision); i++){
-		
-				if(y>collision[| i].y){
-					depth=collision[| i].object.depth-1
-					gun.depth=self.depth-1;
-			
-				}else{
-					depth=collision[| i].object.depth+1
-					gun.depth=self.depth-1;
-				}
-			}
-		}
 		if(!kb){
 			var dt = delta_time/100000;
 			if(instance_exists(gun)){

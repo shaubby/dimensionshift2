@@ -7,7 +7,7 @@ if(active){
 		if(timercd<=0) aggro=true;
 	} 
 	
-	if !aggro {
+	if !aggro and timercd<0 {
 		if(!collision_line(x,y,objPlayerHitbox.x,objPlayerHitbox.y,objBulletProof1,false,true) and point_distance(x,y,objPlayerHitbox.x,objPlayerHitbox.y)<aggrodistance){
 			aggro=true
 		}
@@ -63,4 +63,6 @@ if(active){
 		kb=false
 	}
 	depth=200
+} else {
+	speed=0;
 }

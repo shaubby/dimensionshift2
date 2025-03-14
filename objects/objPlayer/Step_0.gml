@@ -8,7 +8,7 @@ keyDown = keyboard_check(ord("S"));
 
 
 
-spd = 10*dt;
+spd = 11.5*dt;
 
 // Movement
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
@@ -79,15 +79,15 @@ if(objDimensions.currentdimension==2){
 
 if(hit){
 	if(flashcd<=0){
-		if image_alpha==.3 image_alpha=1;
-		else image_alpha=.3;
+		//if image_alpha==.3 image_alpha=1;
+		//else image_alpha=.3;
 		flashcd=flashrate
 	}
 	hitcd-=dt;
 	flashcd-=dt;
 	if(hitcd<=0){
 		hit=false;
-		image_alpha=1;
+		//image_alpha=1;
 	}
 	image_index=1;
 } else image_index=0;

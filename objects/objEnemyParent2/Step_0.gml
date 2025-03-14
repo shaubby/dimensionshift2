@@ -1,5 +1,5 @@
 if(active){
-	if !aggro {
+	if !aggro and timercd<0 {
 		if(!collision_line(x,y,objPlayerHitbox.x,objPlayerHitbox.y,objBulletProof2,false,true) and point_distance(x,y,objPlayerHitbox.x,objPlayerHitbox.y)<aggrodistance){
 			aggro=true
 			sprite_index=aggroSprite;
@@ -48,4 +48,6 @@ if(active){
 		kb=false
 	}
 	depth=9300-y
+} else {
+	speed=0;
 }

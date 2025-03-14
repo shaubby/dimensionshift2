@@ -23,7 +23,7 @@ if(owner.aggro and owner.active) {
 	if(cd<=0) {
 		var projectile = instance_create_layer(x +lengthdir_x(4, image_angle),y+lengthdir_y(4,image_angle), "Instances2", objEnemyProjectile2);
 		projectile.dir=self.image_angle
-		projectile.spd=15
+		projectile.spd=20
 		projectile.time=100
 		projectile.dmg=10
 		projectile.image_angle=projectile.dir

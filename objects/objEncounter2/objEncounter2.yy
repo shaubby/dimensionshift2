@@ -9,8 +9,8 @@
   "name":"objEncounter2",
   "overriddenProperties":[],
   "parent":{
-    "name":"encounters",
-    "path":"folders/Objects/FirstDimension/encounters.yy",
+    "name":"Encounters",
+    "path":"folders/Objects/Encounters.yy",
   },
   "parentObjectId":null,
   "persistent":false,

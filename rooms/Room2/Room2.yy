@@ -229,6 +229,7 @@
     {"name":"inst_4F05EE33","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_1C32EC13","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_6B65BBB7","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_2E9ADB75","path":"rooms/Room2/Room2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -253,7 +254,7 @@
           -17,468,-2718,-2147483648,1,253,-49,170,1,256,-291,-2147483648,1,295,-49,297,1,298,-41893,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_530567D9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_530567D9","objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1392.0,"y":800.0,},
+        {"$GMRInstance":"v1","%Name":"inst_530567D9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_530567D9","objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":456.0,"y":472.0,},
         {"$GMRInstance":"v1","%Name":"inst_2A503722","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A503722","objectId":{"name":"objGun","path":"objects/objGun/objGun.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":480.0,},
         {"$GMRInstance":"v1","%Name":"inst_2DD03265","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DD03265","objectId":{"name":"objCheckpoint1","path":"objects/objCheckpoint1/objCheckpoint1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":6.0,"scaleY":2.5,"x":776.0,"y":704.0,},
         {"$GMRInstance":"v1","%Name":"inst_5C9813AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5C9813AF","objectId":{"name":"objCheckpoint2","path":"objects/objCheckpoint2/objCheckpoint2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":3.0,"x":1016.0,"y":776.0,},
@@ -479,6 +480,7 @@
         {"$GMRInstance":"v1","%Name":"inst_5B003749","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B003749","objectId":{"name":"objLight2","path":"objects/objLight2/objLight2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1260.0,"y":640.0,},
         {"$GMRInstance":"v1","%Name":"inst_4F05EE33","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F05EE33","objectId":{"name":"objLight2","path":"objects/objLight2/objLight2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1104.0,"y":792.0,},
         {"$GMRInstance":"v1","%Name":"inst_1C32EC13","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C32EC13","objectId":{"name":"objLight2","path":"objects/objLight2/objLight2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1432.0,"y":788.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2E9ADB75","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E9ADB75","objectId":{"name":"objFountain2","path":"objects/objFountain2/objFountain2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1476.0,"y":828.0,},
       ],"layers":[],"name":"Instances2","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"DungeonTilesUnder","depth":9300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"DungeonTilesUnder","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":192,"SerialiseWidth":342,"TileCompressedData":[
           -10041,-2147483648,-49,170,1,46,-291,-2147483648,1,85,-49,212,1,88,-292,-2147483648,1,156,-47,154,1,
@@ -562,7 +564,7 @@
           1,631,-49,-2147483648,1,634,-291,-2147483648,1,631,-49,-2147483648,1,634,-291,-2147483648,-2,631,-48,
           -2147483648,1,634,-291,-2147483648,-2,631,-47,-2147483648,-2,634,-291,-2147483648,1,631,-42,-2147483648,
           -6,716,-2,634,-291,-2147483648,1,715,-49,716,1,718,-41893,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ForestTiles","depth":9500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ForestTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":192,"SerialiseWidth":342,"TileCompressedData":[
           -7555,-2147483648,-3,158,-330,-2147483648,-2,158,1,111,-7,112,3,113,158,158,-329,-2147483648,3,158,111,
           137,-7,134,3,136,113,158,-329,-2147483648,2,111,137,-9,134,4,136,113,158,158,-327,-2147483648,1,133,
@@ -643,7 +645,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":32,"hport":270,"hspeed":-1,"hview":270,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":480,"wview":480,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":1620,"hspeed":-1,"hview":270,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":2880,"wview":480,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
