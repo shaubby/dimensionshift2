@@ -17,6 +17,7 @@ vx = lengthdir_x(spd * inputMagnitude, inputDirection);
 vy = lengthdir_y(spd * inputMagnitude, inputDirection);
 
 
+
 if(objDimensions.currentdimension==1){
 	if(place_meeting(x+vx, y,  objParentSolid1)){
 		vx = 0;
@@ -92,6 +93,11 @@ if(hit){
 	image_index=1;
 } else image_index=0;
 
+if(healthmeter1 >=100 and healthmeter2>=100 and hitpoints <= maxhitpoints-2) {
+	hitpoints+=2;
+	healthmeter1=0
+	healthmeter2=0
+}
 
 y += vy;
 x += vx;

@@ -13,7 +13,8 @@ if(active) {
 			//}
 			if(direction<90 or direction>270) image_xscale=1;
 			else image_xscale=-1
-		
+			//gun.x = x
+			//gun.y=y-1;
 		
 		}
 	}

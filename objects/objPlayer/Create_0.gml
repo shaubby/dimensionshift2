@@ -11,6 +11,8 @@ redFlashAlpha=0;
 hitpoints=16;
 maxhitpoints=16;
 
+healthmeter1 = 0
+healthmeter2 = 0
 
 function takeHit(){
 	hit=true;

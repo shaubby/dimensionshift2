@@ -2,6 +2,7 @@ var dt=delta_time/100000;
 if(owner.active and owner.aggro) {
 	x=owner.x
 	y=owner.y-1
+	
 	var idealdir=point_direction(x, y, objPlayerHitbox.x+objPlayer.vx*predictive, objPlayerHitbox.y+objPlayer.vy*predictive);
 	if(idealdir>image_angle){
 		if(idealdir-image_angle<180){

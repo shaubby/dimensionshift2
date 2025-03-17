@@ -6,7 +6,9 @@
 			instance_create_layer(1072,790,"Instances1",objBarrel1)
 			instance_create_layer(1072,804,"Instances1",objBarrel1)
 			instance_create_layer(1072,818,"Instances1",objBarrel1)
-	
+			
+			
+			
 	
 			//Fairies
 			ds_list_add(tocreate1,[1264,736,objSlime]);
@@ -27,6 +29,12 @@
 	#region Dimension 2
 		else if(stage2==0 and objDimensions.currentdimension==2 and encounter){
 			dimensionswitch=true;
+			ds_list_add(crates, instance_create_layer(1464,776,"Instances2",objCrate5));
+			ds_list_add(crates, instance_create_layer(1464,788,"Instances2",objCrate5))
+			ds_list_add(crates, instance_create_layer(1464,800,"Instances2",objCrate5))
+			ds_list_add(crates, instance_create_layer(1464,812,"Instances2",objCrate5))
+			ds_list_add(crates, instance_create_layer(1464,824,"Instances2",objCrate5))
+			ds_list_add(crates, instance_create_layer(1464,836,"Instances2",objCrate5))
 	
 			ds_list_add(tocreate2, [1210,716, objSlimeBall]);
 			ds_list_add(tocreate2, [1346,908,objSlimeBall]);
@@ -183,5 +191,11 @@ for(var i = 0; i < ds_list_size(enemies2); i++){
 	if(!instance_exists(enemies2[| i])){
 		ds_list_delete(enemies2, i);
 		i--;
+	}
+}
+if(ds_list_size(enemies1) == 0 and ds_list_size(enemies2) == 0 and stage2 == 3 and stage1 == 3){
+	encounter=false
+	for(var i=0; i <ds_list_size(crates); i++){
+		instance_destroy(crates[| i]);
 	}
 }

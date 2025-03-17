@@ -10,8 +10,8 @@
   "name":"objEncounter3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Encounters",
-    "path":"folders/Objects/Encounters.yy",
+    "name":"encounter3",
+    "path":"folders/Objects/Encounters/encounter3.yy",
   },
   "parentObjectId":null,
   "persistent":false,

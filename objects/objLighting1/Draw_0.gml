@@ -7,23 +7,53 @@ if(instance_exists(objDimensions)){
 	if(objDimensions.currentdimension==1){
 		
 		with(objGrasses){
-			gpu_set_blendmode(bm_subtract)
-			draw_sprite_ext(sprLight,0,x,y-(6*(image_yscale)),.7,.7,0,c_white,.05)
-			if(image_angle==0){
-				if(image_index==sprGrassLight){
-					draw_sprite_ext(sprGrassLight,0,x,y,1,1*image_yscale,0,c_white,1)
-				} else {
-					draw_sprite_ext(sprGrassLightShort,0,x,y,1,1*image_yscale,0,c_white,1)
+			if(x > objPlayer.x - 300 and x < objPlayer.x+300 and y > objPlayer.y - 160 and y< objPlayer.y+160){
+				gpu_set_blendmode(bm_subtract)
+				if(objEncounter4.encounter){
+					draw_sprite_ext(sprLight,0,x,y-(6*(image_yscale)),.7,.7,0,c_white,.15)
+				}else {
+					draw_sprite_ext(sprLight,0,x,y-(6*(image_yscale)),.7,.7,0,c_white,.05)
+				}
+				if(image_angle==0){
+					if(image_index==sprGrassLight){
+						//draw_sprite_ext(sprGrassLight,0,x,y,1,1*image_yscale,0,c_white,1)
+					} else {
+						//draw_sprite_ext(sprGrassLightShort,0,x,y,1,1*image_yscale,0,c_white,1)
+					}
+				}
+			}
+			
+		}
+		with(objGrassesConcrete){
+			if(x > objPlayer.x - 300 and x < objPlayer.x+300 and y > objPlayer.y - 160 and y< objPlayer.y+160){
+				gpu_set_blendmode(bm_subtract)
+				if(objEncounter4.encounter){
+					draw_sprite_ext(sprLight,0,x,y-(6*(image_yscale)),.7,.7,0,c_white,.05)
+				}else {
+					draw_sprite_ext(sprLight,0,x,y-(6*(image_yscale)),.7,.7,0,c_white,.05)
+				}
+				if(image_angle==0){
+					if(image_index==sprGrassLight){
+						//draw_sprite_ext(sprGrassLight,0,x,y,1,1*image_yscale,0,c_white,1)
+					} else {
+						//draw_sprite_ext(sprGrassLightShort,0,x,y,1,1*image_yscale,0,c_white,1)
+					}
 				}
 			}
 			
 		}
 		with(objFirefly){
+			
 			gpu_set_blendmode(bm_subtract)
 			draw_sprite_ext(sprLight,0,x,y,7,.7*image_yscale,0,c_white,.05)
 			
 			
 			
+		}
+		if(objEncounter3.encounter){
+			with(objEnemyParent1) {
+				draw_sprite_ext(sprLight,0,x,y,1.5,1.5,0,c_white,.5)
+			}
 		}
 	} else {
 		with(objLight2){
@@ -31,6 +61,11 @@ if(instance_exists(objDimensions)){
 			draw_sprite_ext(sprLight,0,x,y,2,2,0,c_white,1)
 			
 			
+		}
+		if(objEncounter3.encounter){
+			with(objEnemyParent2) {
+				draw_sprite_ext(sprLight,0,x,y,1.5,1.5,0,c_white,.5)
+			}
 		}
 	}
 }

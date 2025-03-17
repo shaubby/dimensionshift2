@@ -23,6 +23,11 @@ while (i < maxhitpoints) {
 	}
 	
 }
+
+draw_sprite_ext(sprHealthMeter, 0, 240, 1200, 10, 10, 0, c_white, 255);
+draw_sprite_part_ext( sprHealthInterior1, 0, 0, 0, 29*healthmeter1/100, 6, 250, 1200, 10,10, c_white, 255);
+draw_sprite_part_ext( sprHealthInterior2, 0, 29-29*healthmeter2/100, 0, 29*healthmeter2/100, 6, 850-290*healthmeter2/100, 1200, 10,10, c_white, 255);
+
 if (redFlashAlpha>0){
 	draw_sprite_stretched_ext(sprRed,0,0,0,display_get_gui_width(),display_get_gui_height(),c_white,redFlashAlpha);
 }
