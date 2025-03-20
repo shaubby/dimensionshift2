@@ -13,3 +13,5 @@ if(!redFlash){
 }
 
 if(flashAlpha>=0){flashAlpha-=.1*dt;}
+
+

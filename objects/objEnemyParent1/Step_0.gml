@@ -1,12 +1,16 @@
 if(active){
 	var dt = delta_time/100000;
 	
+	
 	if(timercd>=0){
 		timercd-=dt/5;
-		image_alpha+=dt/5;
-		if(timercd<=0) aggro=true;
+		if(timed){
+			image_alpha+=dt/5;
+		
+			if(timercd<=0) aggro=true;
+		}
 	} 
-
+	
 	if !aggro and timercd<0 {
 		if(!collision_line(x,y,objPlayerHitbox.x,objPlayerHitbox.y,objBulletProof1,false,true) and point_distance(x,y,objPlayerHitbox.x,objPlayerHitbox.y)<aggrodistance){
 			aggro=true

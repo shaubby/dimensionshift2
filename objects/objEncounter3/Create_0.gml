@@ -23,5 +23,5 @@ tocreate2 = ds_list_create();
 
 
 
-progress=100;
-maxprogress=100
+progress=150;
+maxprogress=150

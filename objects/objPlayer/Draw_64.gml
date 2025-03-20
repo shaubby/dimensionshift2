@@ -28,10 +28,24 @@ draw_sprite_ext(sprHealthMeter, 0, 240, 1200, 10, 10, 0, c_white, 255);
 draw_sprite_part_ext( sprHealthInterior1, 0, 0, 0, 29*healthmeter1/100, 6, 250, 1200, 10,10, c_white, 255);
 draw_sprite_part_ext( sprHealthInterior2, 0, 29-29*healthmeter2/100, 0, 29*healthmeter2/100, 6, 850-290*healthmeter2/100, 1200, 10,10, c_white, 255);
 
+if(healthmeter2 >=100) {
+	
+	draw_sprite_ext(sprGradient2, 0, 0, 0, 6, 6, 0, c_white, .75);
+}
+
+if(healthmeter1 >=100) {
+	draw_sprite_ext(sprGradient1, 0, 0, 0, 6, 6, 0, c_white, .4);
+} 
+
 if (redFlashAlpha>0){
 	draw_sprite_stretched_ext(sprRed,0,0,0,display_get_gui_width(),display_get_gui_height(),c_white,redFlashAlpha);
+}  
+if (greenFlashAlpha>0){
+	draw_sprite_stretched_ext(sprGreen,0,0,0,display_get_gui_width(),display_get_gui_height(),c_white,greenFlashAlpha);
 }
 if(redFlashAlpha>=0){redFlashAlpha-=.05*dt;}
+if(greenFlashAlpha>0) greenFlashAlpha-=.02*dt;
+
 
 if(hit and redFlashAlpha<=0){
 	//draw_sprite_stretched_ext(sprShielded,0,0,0,display_get_gui_width(),display_get_gui_height()/6,c_white,.5);

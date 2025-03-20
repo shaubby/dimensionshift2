@@ -59,7 +59,7 @@ if(encounter){
 			} else {
 				instance_destroy(instance)
 			}
-			objDimensions.cd=objDimensions.maxcd/2
+			//objDimensions.cd=objDimensions.maxcd/2
 		}
 	}
 	if(objDimensions.currentdimension==2 and encounter){
@@ -82,7 +82,7 @@ if(encounter){
 			} else {
 				instance_destroy(instance)
 			}
-			objDimensions.cd=objDimensions.maxcd/2
+			//objDimensions.cd=objDimensions.maxcd/2
 		}
 	}
 

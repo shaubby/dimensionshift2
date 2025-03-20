@@ -2,7 +2,7 @@ event_inherited();
 
 
 
-if(active) {
+if(active and objEncounter4.encounter) {
 	if(aggro){
 		
 		var collision = ds_list_create();
@@ -54,7 +54,7 @@ if(active) {
 						#region laser1
 							if(laserstimer <= laserstimermax*2/3 and !instance_exists(laser) and !instance_exists(laser2) and !instance_exists(laser3)) {
 								laser=instance_create_layer(objPlayerHitbox.x+objPlayer.vx*random_range(predictivemin, predictivemax),objPlayerHitbox.y-8+objPlayer.vy*random_range(predictivemin, predictivemax),"Instances2",objLaser_1);
-								show_debug_message(1)
+								
 								laser.image_speed=1;
 								laser.visible=true;
 								laser.active=true;
@@ -138,7 +138,7 @@ if(active) {
 			if(point_direction(x,y, objPlayerHitbox.x, objPlayerHitbox.y)<90 or point_direction(x,y, objPlayerHitbox.x, objPlayerHitbox.y)>270) image_xscale=1;
 			else image_xscale=-1;
 			
-			if(place_meeting(x,y,objPlayerHitbox) and !objPlayer.hit){
+			if(place_meeting(x,y,objPlayerHitbox) and !objPlayer.hit and !objEncounter4.open){
 				objPlayer.takeHit();
 				objPlayer.hp-=20;
 				knockback(kblength,point_direction(objPlayerHitbox.x,objPlayerHitbox.y,x,y),kbspd);
@@ -147,4 +147,5 @@ if(active) {
 	}
 	depth=9300-y
 }
+if(hp<=0) instance_destroy(self);
 

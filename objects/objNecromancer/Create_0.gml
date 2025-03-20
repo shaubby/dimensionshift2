@@ -7,9 +7,9 @@ kbspd=10;
 
 aggroSprite=sprNecromancer;
 maxcd = 25;
-mincd = 15;
-firerate = 1.5;
+mincd = 10;
+firerate = 2.25;
 
-cd = random_range(10, 30)
+cd = random_range(0, 5)
 shotlength=10;
 shotcd=0;

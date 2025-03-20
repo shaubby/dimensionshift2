@@ -17,6 +17,7 @@ death=false;
 timer1=false;
 timer2=false;
 timercd=0;
+timed=true;
 if(timer1=true) {
 	timercd=1;
 	image_alpha=0;

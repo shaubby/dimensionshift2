@@ -97,6 +97,7 @@ if(healthmeter1 >=100 and healthmeter2>=100 and hitpoints <= maxhitpoints-2) {
 	hitpoints+=2;
 	healthmeter1=0
 	healthmeter2=0
+	greenFlashAlpha=.125
 }
 
 y += vy;

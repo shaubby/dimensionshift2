@@ -32,7 +32,7 @@
 	}
 			
 	#region Dimension 2
-		else if(stage2==0 and objDimensions.currentdimension==2 and stage2==0){
+		else if(stage2==0 and objDimensions.currentdimension==2 and stage2==0 and encounter){
 			dimensionswitch=true;
 
 			ds_list_add(tocreate2, [3264,336, objSlimeBall]);
@@ -50,7 +50,6 @@
 			encounter=true;
 	
 	}
-			
 
 
 #region Creation

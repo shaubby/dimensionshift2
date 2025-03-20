@@ -18,7 +18,7 @@ if(active and aggro) {
 				var dir = point_direction(x, y-8, objPlayerHitbox.x,  objPlayerHitbox.y-8);
 				var projectile = instance_create_layer(x + lengthdir_x(4, dir), y - 8 + lengthdir_y(4, dir), "Instances1", objEnemyProjectile1);
 				projectile.dir=dir
-				projectile.spd=15
+				projectile.spd=25
 				projectile.time=100
 				projectile.dmg=10
 				projectile.image_angle=projectile.dir

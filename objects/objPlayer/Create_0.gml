@@ -13,6 +13,7 @@ maxhitpoints=16;
 
 healthmeter1 = 0
 healthmeter2 = 0
+greenFlashAlpha=0;
 
 function takeHit(){
 	hit=true;

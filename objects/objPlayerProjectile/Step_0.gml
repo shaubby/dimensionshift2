@@ -10,9 +10,9 @@ if(objDimensions.currentdimension==1){
 	if(time <=0 or place_meeting(x, y ,objBulletProof1)) instance_destroy(self)
 	var enemy = instance_place(x, y, [objEnemyParent1,objFlyingEnemyParent1]);
 	if(enemy){
-		if(objEncounter3.encounter) objEncounter3.progress+=5;
+		//if(objEncounter3.encounter) objEncounter3.progress+=5;
 		if(!enemy.death) {
-			objPlayer.healthmeter1 = min(objPlayer.healthmeter1+10, 100);
+			objPlayer.healthmeter1 = min(objPlayer.healthmeter1+20, 100);
 			if(objEncounter3.encounter) objEncounter3.progress+=5;
 		}
 		enemy.hp-=dmg
@@ -30,11 +30,11 @@ if(objDimensions.currentdimension==2){
 		
 		if(!enemy.death){
 			if(variable_instance_exists(enemy, "boss")){
-				objPlayer.healthmeter1 = min(objPlayer.healthmeter1+5, 100);
+				objPlayer.healthmeter1 = min(objPlayer.healthmeter1+20, 100);
 			} else {
-				objPlayer.healthmeter2 = min(objPlayer.healthmeter2+10, 100);
+				objPlayer.healthmeter2 = min(objPlayer.healthmeter2+20, 100);
 			}
-			if(objEncounter3.encounter) objEncounter3.progress+=5;
+			//if(objEncounter3.encounter) objEncounter3.progress+=5;
 		}
 		if(enemy.sprite_index != sprBossShielded){
 			enemy.hp-=dmg
