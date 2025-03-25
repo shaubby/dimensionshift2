@@ -16,3 +16,5 @@ objSecondDimension.visible=false
 projectilesactive2 = false
 
 objPlayer.invincible();
+audio_sound_gain(jazz1, 1, 500);
+audio_sound_gain(jazz2, 0, 500);

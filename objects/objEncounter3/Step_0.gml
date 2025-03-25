@@ -11,6 +11,10 @@ if(place_meeting(x,y,objPlayer) and !encounter) {
 	objDimensions.maxcd=10;
 	objPlayer.hitpoints = objPlayer.maxhitpoints
 	
+	barrel1 = instance_create_layer(2780,1028,"Instances1",objBarrel1)
+	barrel2 = instance_create_layer(2780,1016,"Instances1",objBarrel1)
+	barrel3 = instance_create_layer(2780,1004,"Instances1",objBarrel1)
+	
 }
 
 if(encounter and !dimensionswitch and objDimensions.currentdimension == 1) {
@@ -28,6 +32,9 @@ if(encounter){
 		ds_list_delete(colorlist, 0)
 		if(ds_list_size(colorlist) == 0) {
 			encounter=false;
+			instance_destroy(barrel1)
+			instance_destroy(barrel2)
+			instance_destroy(barrel3)
 			for(var i = 0; i < ds_list_size(enemies1); i++){
 				instance_destroy(enemies1[| i])
 			}

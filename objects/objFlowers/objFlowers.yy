@@ -11,7 +11,10 @@
     "name":"objects",
     "path":"folders/Objects/FirstDimension/objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objFirstDimension",
+    "path":"objects/objFirstDimension/objFirstDimension.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

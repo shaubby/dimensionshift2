@@ -13,6 +13,8 @@ objSecondDimension.visible=false
 
 projectilesactive1 = true;
 projectilesactive2 = false;
+jazz1 = audio_play_sound(Jazz2, 1, true, 1)
+jazz2 = audio_play_sound(Jazz1, 2, true, 0)
 
 flashAlpha=0;
 redFlash=false;

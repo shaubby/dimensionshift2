@@ -9,8 +9,8 @@
   "name":"objLighting1",
   "overriddenProperties":[],
   "parent":{
-    "name":"FirstDimension",
-    "path":"folders/Objects/FirstDimension.yy",
+    "name":"Control",
+    "path":"folders/Objects/Control.yy",
   },
   "parentObjectId":null,
   "persistent":false,

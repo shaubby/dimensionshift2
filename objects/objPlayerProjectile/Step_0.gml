@@ -12,8 +12,9 @@ if(objDimensions.currentdimension==1){
 	if(enemy){
 		//if(objEncounter3.encounter) objEncounter3.progress+=5;
 		if(!enemy.death) {
-			objPlayer.healthmeter1 = min(objPlayer.healthmeter1+20, 100);
-			if(objEncounter3.encounter) objEncounter3.progress+=5;
+			objPlayer.healthmeter1 = min(objPlayer.healthmeter1+10, 100);
+			
+			if(instance_exists(objEncounter3) and objEncounter3.encounter) objEncounter3.progress+=5;
 		}
 		enemy.hp-=dmg
 		enemy.knockback(enemy.kblength, dir, enemy.kbspd);
@@ -30,11 +31,11 @@ if(objDimensions.currentdimension==2){
 		
 		if(!enemy.death){
 			if(variable_instance_exists(enemy, "boss")){
-				objPlayer.healthmeter1 = min(objPlayer.healthmeter1+20, 100);
+				objPlayer.healthmeter1 = min(objPlayer.healthmeter1+10, 100);
 			} else {
-				objPlayer.healthmeter2 = min(objPlayer.healthmeter2+20, 100);
+				objPlayer.healthmeter2 = min(objPlayer.healthmeter2+10, 100);
 			}
-			//if(objEncounter3.encounter) objEncounter3.progress+=5;
+			if(instance_exists(objEncounter3) and objEncounter3.encounter) objEncounter3.progress+=5;
 		}
 		if(enemy.sprite_index != sprBossShielded){
 			enemy.hp-=dmg

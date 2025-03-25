@@ -1,6 +1,6 @@
 image_index = 1;
 image_speed = 0;
-colors = [0x5459ca, 0x9F695C, 0x557d55, 0x51B5EE, 0xa69f76, 0x9D7A94, 0x6a6ad9, 0x6b8dfa]
+colors = [0x5459ca, 0x9F695C, 0x557d55, 0x51B5EE, 0xa69f76, 0x9D7A94, 0xC3C3FF, 0x6b8dfa]
 encounter = false;
 colorlist=ds_list_create();
 buttons = [objButton1, objButton2, objButton3, objButton4, objButton5, objButton6, objButton7, objButton8];
@@ -19,6 +19,9 @@ enemies2=ds_list_create();
 dimensionswitch=false;
 tocreate1 = ds_list_create();
 tocreate2 = ds_list_create();
+barrel1=-1000
+barrel2=-1000
+barrel3=-1000
 
 
 

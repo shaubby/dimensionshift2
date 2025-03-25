@@ -1,6 +1,6 @@
 #region Stage 1
 	#region Dimension 1
-		if(place_meeting(x,y,objPlayer) and !encounter) {
+		if(place_meeting(x,y,objPlayer) and !encounter and !complete) {
 			encounter=true;
 	
 			instance_create_layer(1072,790,"Instances1",objBarrel1)
@@ -27,7 +27,7 @@
 		}
 			
 	#region Dimension 2
-		else if(stage2==0 and objDimensions.currentdimension==2 and encounter){
+		else if(stage2==0 and objDimensions.currentdimension==2 and encounter and !complete){
 			dimensionswitch=true;
 			ds_list_add(crates, instance_create_layer(1464,776,"Instances2",objCrate5));
 			ds_list_add(crates, instance_create_layer(1464,788,"Instances2",objCrate5))
@@ -195,6 +195,7 @@ for(var i = 0; i < ds_list_size(enemies2); i++){
 }
 if(ds_list_size(enemies1) == 0 and ds_list_size(enemies2) == 0 and stage2 == 3 and stage1 == 3){
 	encounter=false
+	complete=true
 	for(var i=0; i <ds_list_size(crates); i++){
 		instance_destroy(crates[| i]);
 	}

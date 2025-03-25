@@ -14,7 +14,7 @@ maxhitpoints=16;
 healthmeter1 = 0
 healthmeter2 = 0
 greenFlashAlpha=0;
-
+if(x<470) hitpoints=12;
 function takeHit(){
 	hit=true;
 	hitcd=hitlength;
