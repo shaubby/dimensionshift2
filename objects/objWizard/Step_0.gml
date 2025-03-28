@@ -72,8 +72,11 @@ if(active and aggro) {
 				cd=random_range(0,maxcd);
 			}
 		} else {
-
-			lasercd-=dt/10;
+			if(objDimensions.difficulty == 1) {
+				lasercd-=dt/10;
+			} else if(objDimensions.difficulty == 2) {
+				lasercd-=dt/5;
+			}
 			laser.image_alpha-=dt/30
 		}
 	}

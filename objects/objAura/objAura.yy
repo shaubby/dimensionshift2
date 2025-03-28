@@ -13,7 +13,10 @@
     "name":"enemies",
     "path":"folders/Objects/FirstDimension/enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objFirstDimension",
+    "path":"objects/objFirstDimension/objFirstDimension.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

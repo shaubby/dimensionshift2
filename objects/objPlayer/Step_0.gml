@@ -35,7 +35,7 @@ if(objDimensions.currentdimension==1){
 	// Collision Depths
 	var collision = ds_list_create();
 	
-	with(hitbox)instance_place_list(x,y,objGrasses, collision, true);
+	with(hitbox)instance_place_list(x,y,[objGrasses, objFlower], collision, true);
 	for(var i=0; i < ds_list_size(collision); i++){
 		
 		if(hitbox.x>collision[| i].x){
@@ -98,8 +98,22 @@ if(healthmeter1 >=100 and healthmeter2>=100 and hitpoints <= maxhitpoints-2) {
 	healthmeter1=0
 	healthmeter2=0
 	greenFlashAlpha=.125
+	greenFlashAlpha2=50
+	audio_play_sound(sndPlayerHeal, 2, false);
+}
+if(vx!=0 or vy!=0) {
+	if(iswalking==false){
+		iswalking=true;
+		audio_sound_gain(footsteps, 1, 10);
+	}
+}else {
+	if(iswalking==true){
+		iswalking=false;
+		audio_sound_gain(footsteps, 0, 10);
+	}
 }
 
+	
 y += vy;
 x += vx;
 depth=9300-hitbox.y;

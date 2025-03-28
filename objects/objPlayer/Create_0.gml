@@ -8,14 +8,23 @@ flashcd=0;
 flashrate=4;
 hit=false;
 redFlashAlpha=0;
+
+
+
 hitpoints=16;
 maxhitpoints=16;
+footsteps = audio_play_sound(sndFootsteps1, 2, true);
+audio_sound_gain(footsteps, 0, 0);
+iswalking=false;
 
 healthmeter1 = 0
 healthmeter2 = 0
 greenFlashAlpha=0;
+greenFlashAlpha2=255;
+
 if(x<470) hitpoints=12;
 function takeHit(){
+	audio_play_sound(sndPlayerHit, 2, false);
 	hit=true;
 	hitcd=hitlength;
 	//image_alpha=.3;

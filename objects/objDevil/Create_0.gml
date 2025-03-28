@@ -1,0 +1,21 @@
+event_inherited();
+path = path_add();
+spd=4
+fastspd = 20;
+hp=200
+kblength=2;
+kbspd=10;
+start=false
+sprite_index=sprDevilIdle;
+aggroSprite=sprDevilIdle;
+cd = random_range(0, 10)
+maxcd = 12;
+mincd = 8;
+shotlengthmin = 7;
+shotlengthmax = 12;
+shotlength = random_range(shotlengthmin, shotlengthmax)
+dir = -1000;
+predictive=random_range(40,60);
+fireball = -1000;
+aura = instance_create_layer(x, y, "Instances2", objAura2);
+aura.owner = self;

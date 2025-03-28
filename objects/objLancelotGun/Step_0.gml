@@ -21,9 +21,15 @@ if(owner.aggro and owner.active) {
 	else image_yscale=-1;
 	
 	if(cd<=0) {
+		audio_play_sound(sndPlayerShoot1, 1, false);
 		var projectile = instance_create_layer(x +lengthdir_x(4, image_angle),y+lengthdir_y(4,image_angle), "Instances2", objEnemyProjectile2);
 		projectile.dir=self.image_angle
-		projectile.spd=15
+		if(objDimensions.difficulty == 1) {
+			projectile.spd=15
+		} else if(objDimensions.difficulty == 2) {
+			projectile.spd=10
+		}
+		
 		projectile.time=100
 		projectile.dmg=10
 		projectile.image_angle=projectile.dir

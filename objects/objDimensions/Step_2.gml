@@ -7,6 +7,7 @@ if(cd<=0){
 		with(objPlayer) collide=place_meeting(x,y, objParentSolid2);
 		if(keyboard_check_pressed(vk_space)){
 			if(!collide) {
+				audio_play_sound(sndDimensionShift, 5, false)
 				alarm_set(0, 1);
 				alarm_set(2, 5/dt);
 				flashAlpha=.75;
@@ -22,6 +23,7 @@ if(cd<=0){
 		with(objPlayer) collide=place_meeting(x,y, objParentSolid1);
 		if(keyboard_check_pressed(vk_space)){
 			if(!collide) {
+				audio_play_sound(sndDimensionShift, 5, false)
 				alarm_set(1, 1);
 				alarm_set(3, 5/dt);
 				flashAlpha=.75;

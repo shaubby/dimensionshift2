@@ -5,7 +5,7 @@
 if(place_meeting(x,y,objPlayer) and !encounter) {
 	encounter=true;
 
-	ds_list_add(tocreate2, [2208,640,objWizard]);
+	//ds_list_add(tocreate2, [2208,640,objWizard]);
 	ds_list_add(tocreate2, [2208,816,objWizard]);
 	ds_list_add(tocreate2, [2408,816,objWizard]);
 	objDimensions.maxcd=10;
@@ -20,7 +20,7 @@ if(place_meeting(x,y,objPlayer) and !encounter) {
 if(encounter and !dimensionswitch and objDimensions.currentdimension == 1) {
 	ds_list_add(tocreate1, [2200,936,objFungant]);
 	ds_list_add(tocreate1, [2424,848,objFungant]);
-	ds_list_add(tocreate1, [2640,952,objFungant]);
+	//ds_list_add(tocreate1, [2640,952,objFungant]);
 	dimensionswitch=true;
 }
 

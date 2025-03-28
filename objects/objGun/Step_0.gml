@@ -7,12 +7,19 @@ var dt = delta_time/100000;
 
 
 if mouse_check_button(mb_left) and cd <=0{
+	audio_play_sound(sndPlayerShoot1, 1, false);
 	var direct = point_direction(x, y, mouse_x, mouse_y)
 	with(instance_create_layer(x+lengthdir_x(6, direct), y+lengthdir_y(6, direct), "Instances", objPlayerProjectile)) {
 		dir=direct
-		spd=25
-		time=10
-		dmg=10
+		if(objDimensions.difficulty == 1) {
+			spd=25
+			time=10
+			dmg=10
+		} else if (objDimensions.difficulty == 2){
+			spd=30
+			time=10
+			dmg=15
+		}
 		image_angle=dir
 	}
 	cd=firerate;
@@ -40,4 +47,4 @@ if mouse_check_button(mb_left) and cd <=0{
 	cd=firerate/2;
 }*/
 if cd!=0 cd-=dt;
-depth=objPlayer.depth-1
+depth=objPlayer.depth-3

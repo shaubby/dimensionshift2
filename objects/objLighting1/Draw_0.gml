@@ -74,6 +74,15 @@ if(instance_exists(objDimensions)){
 			
 			
 		}
+		with(objBluePlate){
+			
+			gpu_set_blendmode(bm_subtract)
+			draw_sprite_ext(sprLight,0,x,y,1.5,1.5,0,c_white,.5)
+			
+			
+			
+		}
+
 		if(instance_exists(objEncounter3)){
 			if(objEncounter3.encounter){
 				with(objEnemyParent1) {
