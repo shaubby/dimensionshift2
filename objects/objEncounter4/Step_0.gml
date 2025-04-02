@@ -46,7 +46,14 @@ if(stage==1){
 				ds_list_delete(colorlist, rand-1);
 				ds_list_delete(colorlist, rand-1);
 			}
-				
+			if(color ==0 or color==1){
+				objWires.image_index=1
+			} else if (color ==2 or color == 3){
+				objWires.image_index=3
+			} else {
+				objWires.image_index=2
+			} 
+			objPopup.popup=7;
 			objWireInterior.image_blend=colors[color]
 			ds_list_add(tocreate1notaggro, [3504,752,objSlime]);
 			ds_list_add(tocreate1notaggro, [3456,764,objSlime]);
@@ -86,7 +93,7 @@ if(stage==1){
 	#region stage2
 		progress-=dt;
 		for(var i = 0; i < array_length(buttons); i++){
-			if(buttons[i].pressed == true){
+			if(instance_exists(buttons[i]) and buttons[i].pressed == true){
 				if(color != i) objPlayer.hitpoints=0;
 				else {
 					if(color ==0 or color==1){
@@ -99,6 +106,7 @@ if(stage==1){
 						objPlayer.x=3848
 						objPlayer.y = 600
 					}
+					objPopup.popup=0;
 					with(objDimensions){
 						alarm_set(0, 1);
 						alarm_set(2, 5/dt);
@@ -160,7 +168,7 @@ if(stage==1){
 } else if (stage == 3) {
 	
 	#region stage3
-
+		objWires.image_index=0;
 		if(open and place_meeting(x, y, objPlayer)){
 			open = false;
 			show_debug_message(2)
@@ -199,6 +207,14 @@ if(stage==1){
 			color = colorlist[| rand];
 			show_debug_message(color)
 			objWireInterior.image_blend=colors[color]
+			if(color ==0 or color==1){
+				objWires.image_index=1
+			} else if (color ==2 or color == 3){
+				objWires.image_index=3
+			} else {
+				objWires.image_index=2
+			}
+			objPopup.popup=7;
 			if(rand mod 2 == 0){
 				ds_list_delete(colorlist, rand);
 				ds_list_delete(colorlist, rand);
@@ -245,7 +261,7 @@ if(stage==1){
 	#region stage4
 		progress-=dt;
 		for(var i = 0; i < array_length(buttons); i++){
-			if(buttons[i].pressed == true){
+			if(instance_exists(buttons[i]) and buttons[i].pressed == true){
 				if(color != i) objPlayer.hitpoints=0;
 				else {
 					objPlayer.hitpoints=objPlayer.maxhitpoints;
@@ -259,6 +275,7 @@ if(stage==1){
 						objPlayer.x=3848
 						objPlayer.y = 600
 					}
+					objPopup.popup=0;
 					with(objDimensions){
 						alarm_set(0, 1);
 						alarm_set(2, 5/dt);
@@ -318,7 +335,7 @@ if(stage==1){
 } else if (stage == 5) {
 	
 	#region stage5
-
+		objWires.image_index=0;
 		if(open and place_meeting(x, y, objPlayer)){
 			open = false;
 			show_debug_message(2)
@@ -358,6 +375,14 @@ if(stage==1){
 			color = colorlist[| rand];
 			show_debug_message(color)
 			objWireInterior.image_blend=colors[color]
+			if(color ==0 or color==1){
+				objWires.image_index=1
+			} else if (color ==2 or color == 3){
+				objWires.image_index=3
+			} else {
+				objWires.image_index=2
+			}
+			objPopup.popup=7;
 			if(rand mod 2 == 0){
 				ds_list_delete(colorlist, rand);
 				ds_list_delete(colorlist, rand);
@@ -406,7 +431,7 @@ if(stage==1){
 	#region stage6
 		progress-=dt;
 		for(var i = 0; i < array_length(buttons); i++){
-			if(buttons[i].pressed == true){
+			if(instance_exists(buttons[i]) and buttons[i].pressed == true){
 				if(color != i) objPlayer.hitpoints=0;
 				else {
 					objPlayer.hitpoints=objPlayer.maxhitpoints;
@@ -420,6 +445,7 @@ if(stage==1){
 						objPlayer.x=3848
 						objPlayer.y = 600
 					}
+					objPopup.popup=0;
 					with(objDimensions){
 						alarm_set(0, 1);
 						alarm_set(2, 5/dt);
@@ -478,7 +504,7 @@ if(stage==1){
 	#endregion
 } else if (stage == 7){
 	#region stage7
-
+		objWires.image_index=0;
 		if(open and place_meeting(x, y, objPlayer)){
 			open = false;
 			show_debug_message(2)
@@ -508,6 +534,7 @@ if(stage==1){
 		}
 		if(!instance_exists(objBoss)) {
 			encounter=false;
+			objWiresOver.image_index=1;
 			while(ds_list_size(enemies1) > 0){
 				var currentenemy = enemies1[| 0]
 				ds_list_delete(enemies1, 0);

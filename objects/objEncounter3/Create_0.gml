@@ -26,5 +26,5 @@ barrel3=-1000
 
 
 
-progress=150;
-maxprogress=150
+progress=250;
+maxprogress=250

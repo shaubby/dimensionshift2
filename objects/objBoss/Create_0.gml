@@ -28,5 +28,10 @@ laser3cd = -1000;
 lasercdmax = 5;
 laserstimer = -1000;
 laserstimermax = 15
-predictivemin=55;
-predictivemax=70
+if(objDimensions.difficulty==1) {
+predictivemin=3;
+predictivemax=5;
+} else {
+	predictivemin=0;
+predictivemax=1;
+}

@@ -1,3 +1,4 @@
+event_inherited()
 /*=delta_time/100000;
 if(dir==1){
 	image_angle+=rotspd*dt;

@@ -23,3 +23,7 @@ if(checkpoint==0) {
 	objPlayer.x=824
 	objPlayer.y=440
 }
+else if (checkpoint==6) {
+	objPlayer.x=830
+	objPlayer.y=1585
+}

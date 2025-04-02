@@ -7,5 +7,10 @@ death=-1000
 deathtime=3;
 maxspd=spd
 shoot=false;
-predictive=random_range(20, 60);
+if(objDimensions.difficulty==1) {
+predictive=random_range(3,6);
+} else  {
+	predictive=random_range(1, 2);
+}
 offset=-1000
+

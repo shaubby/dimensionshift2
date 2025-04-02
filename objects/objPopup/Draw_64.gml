@@ -16,6 +16,9 @@ if(popup!=0) {
 	}
 } else {
 	objDrawable.sprite_index=sprSolid3;
+	objDrawable2.sprite_index=sprSolid3;
+	objDrawable.image_speed=1;
+	objDrawable2.image_speed=1;
 }
 if(popup ==1){
 	objDrawable.image_xscale = 8;
@@ -49,4 +52,42 @@ if(popup ==1){
 	objDrawable.sprite_index=sprHealthMeter2;
 	
 	//draw_sprite_ext(sprWASD, 1, 280, 620, 8, 8, 0, c_white, 1);
+} else if(popup ==5){
+	objDrawable.image_xscale = 8;
+	objDrawable.image_yscale = 8;
+	objDrawable.x = 220;
+	objDrawable.y = 640;
+	objDrawable.sprite_index=sprSpacePopup;
+	
+	//draw_sprite_ext(sprWASD, 1, 280, 620, 8, 8, 0, c_white, 1);
+} else if(popup ==6){
+	objDrawable.image_xscale = 8;
+	objDrawable.image_yscale = 8;
+	objDrawable.x = 280;
+	objDrawable.y =700;
+	objDrawable.sprite_index=sprButtonPopup;
+	objDrawable2.image_xscale = 8;
+	objDrawable2.image_yscale = 8;
+	objDrawable2.x = 520;
+	objDrawable2.y = 700;
+	objDrawable2.sprite_index=sprButton;
+	if(ds_list_size(objEncounter3.colorlist) <= 0 ){
+		popup=0;
+	} else if(instance_exists(objEncounter3.buttons[objEncounter3.colorlist[| 0]])) objDrawable2.image_index=objEncounter3.buttons[objEncounter3.colorlist[| 0]].image_index;
+	
+	
+	//draw_sprite_ext(sprWASD, 1, 280, 620, 8, 8, 0, c_white, 1);
+} if (popup=7) {
+	objDrawable.image_xscale = 8;
+	objDrawable.image_yscale = 8;
+	objDrawable.x = 280;
+	objDrawable.y =700;
+	objDrawable.sprite_index=sprButtonPopup;
+	objDrawable2.image_xscale = 8;
+	objDrawable2.image_yscale = 8;
+	objDrawable2.x = 520;
+	objDrawable2.y = 700;
+	objDrawable2.sprite_index=sprButton;
+	if(instance_exists(objEncounter4)) objDrawable2.image_index=objEncounter4.buttons[objEncounter4.color].image_index;
 }
+

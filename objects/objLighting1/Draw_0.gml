@@ -69,7 +69,9 @@ if(instance_exists(objDimensions)){
 		with(objFirefly){
 			
 			gpu_set_blendmode(bm_subtract)
+			if(x > objPlayer.x - 500 and x < objPlayer.x+500 and y > objPlayer.y - 160 and y< objPlayer.y+160){
 			draw_sprite_ext(sprLight,0,x,y,7,.7*image_yscale,0,c_white,.05)
+			}
 			
 			
 			

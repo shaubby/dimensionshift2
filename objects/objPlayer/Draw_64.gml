@@ -44,10 +44,13 @@ if (redFlashAlpha>0){
 if (greenFlashAlpha>0){
 	draw_sprite_stretched_ext(sprGreen,0,0,0,display_get_gui_width(),display_get_gui_height(),c_white,greenFlashAlpha);
 }
-
-image_blend = make_color_rgb(greenFlashAlpha2, 255, greenFlashAlpha2)
+if(greenFlashAlpha2 !=255) { 
+	image_blend = make_color_rgb(greenFlashAlpha2, 255, greenFlashAlpha2)
+} else {
+	image_blend=c_white;
+}
 if(greenFlashAlpha2 < 255) greenFlashAlpha2+=dt*10;
-
+if(greenFlashAlpha2 > 255) greenFlashAlpha2 = 255;
 if(redFlashAlpha>=0){redFlashAlpha-=.05*dt;}
 if(greenFlashAlpha>0) greenFlashAlpha-=.02*dt;
 

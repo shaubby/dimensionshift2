@@ -1,3 +1,4 @@
+event_inherited()
 if(place_meeting(x, y,objPlayer) or !activated){
 	sprite_index=sprButtonPressed;
 	image_index=index;

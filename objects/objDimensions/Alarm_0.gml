@@ -10,6 +10,10 @@ currentdimension=2
 
 objFirstDimension.active=false
 objFirstDimension.visible=false
+if(room == Room5) {
+	objFirstDimension.active=true
+	objFirstDimension.visible=true
+}
 
 
 projectilesactive1 = false

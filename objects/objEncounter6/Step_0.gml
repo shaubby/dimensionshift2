@@ -110,6 +110,8 @@ for(var i = 0; i < ds_list_size(enemies2); i++){
 if(ds_list_size(enemies1) == 0 and ds_list_size(enemies2) == 0 and stage2 == 3 and stage1 == 3){
 	encounter=false
 	complete=true
+	audio_stop_all();
+	room=Room5;
 	for(var i=0; i <ds_list_size(crates); i++){
 		instance_destroy(crates[| i]);
 	}

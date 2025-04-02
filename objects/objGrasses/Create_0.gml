@@ -1,5 +1,6 @@
 event_inherited()
 randomize()
+
 image_yscale=random_range(.75,1.2);
 spd=random_range(.04,.06)
 if(irandom_range(0,1)==0)dir=1;

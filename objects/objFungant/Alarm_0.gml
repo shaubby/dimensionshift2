@@ -1,5 +1,6 @@
 sprite_index=sprFungusIdle;
 if(active){
+	cd=random_range(mincd,maxcd);
 	direct=point_direction(x,y,objPlayerHitbox.x,objPlayerHitbox.y);
 	var projectile = instance_create_layer(x +lengthdir_x(4, direct),y+lengthdir_y(4,direct), "Instances2", objEnemyProjectile1);
 	projectile.dir=self.direct

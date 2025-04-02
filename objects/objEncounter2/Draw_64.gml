@@ -14,3 +14,4 @@ if(encounter){
 	draw_text(2050, 140, ds_list_size(enemies1) + ds_list_size(tocreate1));
 	//gpu_set_texfilter(0)
 }
+draw_set_color(c_white);

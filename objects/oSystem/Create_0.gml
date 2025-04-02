@@ -9,7 +9,7 @@ window_set_fullscreen(true);
 cursor_sprite=sprMouse;
 window_set_cursor(cr_none)
 
-cd = 500
+cd = 200
 
-show_debug_log(true);
+//show_debug_log(true);
 

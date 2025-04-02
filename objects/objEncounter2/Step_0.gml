@@ -48,7 +48,7 @@
 
 #region ------------ Stage 2 -----------------
 	#region Dimension 1
-		else if(objDimensions.currentdimension==1 and stage1==1 and ds_list_size(enemies1) <= 0 and ds_list_size(enemies2) <= 0 and stage2==1 and encounter and ds_list_size(tocreate1) <= 0 and ds_list_size(tocreate2) <= 0){
+		else if(stage1==1 and ds_list_size(enemies1) <= 0 and ds_list_size(enemies2) <= 0 and stage2==1 and encounter and ds_list_size(tocreate1) <= 0 and ds_list_size(tocreate2) <= 0){
 			//Fairies
 			if(objDimensions.difficulty == 1) {
 				ds_list_add(tocreate1,[1264,736,objFairy]);
@@ -108,7 +108,7 @@
 
 #region ------------ Stage 3 -----------------
 	#region Dimension 1
-		else if(objDimensions.currentdimension==1 and stage1==2 and ds_list_size(enemies1) <= 0 and ds_list_size(enemies2) <= 0 and stage2==2 and encounter and ds_list_size(tocreate1) <= 0 and ds_list_size(tocreate2) <= 0){
+		else if(stage1==2 and ds_list_size(enemies1) <= 0 and ds_list_size(enemies2) <= 0 and stage2==2 and encounter and ds_list_size(tocreate1) <= 0 and ds_list_size(tocreate2) <= 0){
 			//Fairies
 			if(objDimensions.difficulty == 1) {
 				ds_list_add(tocreate1,[1312,712,objFairy]);
@@ -123,8 +123,9 @@
 			ds_list_add(tocreate1, [1208,904,objFungant]);
 			
 			//Slime
-			
-			ds_list_add(tocreate1, [1208,704,objSlime]);
+			if(objDimensions.difficulty == 1) {
+				ds_list_add(tocreate1, [1208,704,objSlime]);
+			}
 			ds_list_add(tocreate1, [1200,856,objSlime]);
 			ds_list_add(tocreate1, [1344,872,objSlime]);
 			//Lancelots
@@ -153,8 +154,9 @@
 			objPlayer.invincible();
 			//objPlayer.hitpoints=min(objPlayer.hitpoints+2,objPlayer.maxhitpoints);
 		}	
+show_debug_message((string(ds_list_size(tocreate1)) + " " + string(ds_list_size(tocreate2)) + " " + string(ds_list_size(enemies1)) + " " + string(ds_list_size(enemies2))));
 #region Creation
-	if(objDimensions.currentdimension==1 and encounter){
+	if(encounter and objDimensions.currentdimension==1){
 		for(var i = 0; i < ds_list_size(tocreate1); i++){
 			
 			var instance= instance_create_layer(tocreate1[| i][0],tocreate1[| i][1],"Instances1",tocreate1[| i][2])
@@ -213,10 +215,19 @@ for(var i = 0; i < ds_list_size(enemies2); i++){
 		i--;
 	}
 }
-if(ds_list_size(enemies1) == 0 and ds_list_size(enemies2) == 0 and stage2 == 3 and stage1 == 3){
+if(ds_list_size(tocreate2) ==0 and ds_list_size(tocreate1)==0 and ds_list_size(enemies1) == 0 and ds_list_size(enemies2) == 0 and stage2 == 3 and stage1 == 3 and !complete){
 	encounter=false
 	complete=true
+	objArrow1.image_alpha=1;
+	if(objDimensions.currentdimension == 1)  {
+		objPopup.popup=5;
+		waiting = true;
+	}
 	for(var i=0; i <ds_list_size(crates); i++){
 		instance_destroy(crates[| i]);
 	}
+}
+if(objDimensions.currentdimension == 2 and waiting) {
+	objPopup.popup=0;
+	waiting=false;
 }

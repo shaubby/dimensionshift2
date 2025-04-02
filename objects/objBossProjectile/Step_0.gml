@@ -1,6 +1,7 @@
 if(objDimensions.currentdimension==2 and objDimensions.projectilesactive2) {
+	var dt = delta_time/100000;
 	if(shoot){
-		var dt = delta_time/100000;
+		
 		var stepspd = spd*dt;
 
 		vx = lengthdir_x(stepspd, dir);
@@ -35,7 +36,7 @@ if(objDimensions.currentdimension==2 and objDimensions.projectilesactive2) {
 	} else {
 		x = objBoss.x + lengthdir_x(32, point_direction(objBoss.x, objBoss.y-22, objPlayerHitbox.x, objPlayerHitbox.y)+offset)
 		y = objBoss.y-22 + lengthdir_y(32, point_direction(objBoss.x, objBoss.y-22, objPlayerHitbox.x, objPlayerHitbox.y)+offset)
-		dir = point_direction(x, y, objPlayerHitbox.x + objPlayer.vx*predictive, objPlayerHitbox.y + objPlayer.vy*predictive);
+		dir = point_direction(x, y, objPlayerHitbox.x + objPlayer.vx*predictive/dt, objPlayerHitbox.y + objPlayer.vy*predictive/dt);
 		image_angle = dir;
 	}
 		

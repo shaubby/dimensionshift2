@@ -1,4 +1,4 @@
-hitbox = instance_create_layer(x,y,"Instances1",objPlayerHitbox)
+hitbox = instance_create_layer(x,y,"Instances1",objPlayerHitbox);
 
 hp=100
 maxhp=100
@@ -9,19 +9,18 @@ flashrate=4;
 hit=false;
 redFlashAlpha=0;
 
-
+cd = 50
 
 hitpoints=16;
 maxhitpoints=16;
-footsteps = audio_play_sound(sndFootsteps1, 2, true);
-audio_sound_gain(footsteps, 0, 0);
-iswalking=false;
+//footsteps = audio_play_sound(sndFootsteps1, 2, true);
+//audio_sound_gain(footsteps, 0, 0);
+//iswalking=false;
 
 healthmeter1 = 0
 healthmeter2 = 0
 greenFlashAlpha=0;
 greenFlashAlpha2=255;
-
 if(x<470) hitpoints=12;
 function takeHit(){
 	audio_play_sound(sndPlayerHit, 2, false);

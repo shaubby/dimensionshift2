@@ -30,6 +30,7 @@
     {"$GMSpriteFrame":"","%Name":"208e4a8f-386a-442b-bed9-624bbf204e90","name":"208e4a8f-386a-442b-bed9-624bbf204e90","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"ae0408ea-8cec-479f-8b6d-a028625bb5f8","name":"ae0408ea-8cec-479f-8b6d-a028625bb5f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"71b16c18-af0a-435b-bb4b-2dbb4da2de95","name":"71b16c18-af0a-435b-bb4b-2dbb4da2de95","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"94e3045b-b43a-479c-a582-5ef94121608a","name":"94e3045b-b43a-479c-a582-5ef94121608a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -66,7 +67,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":18.0,
+    "length":19.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -76,7 +77,7 @@
     },
     "name":"sprHealthMeter2",
     "playback":1,
-    "playbackSpeed":10.0,
+    "playbackSpeed":15.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -139,6 +140,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"71b16c18-af0a-435b-bb4b-2dbb4da2de95","path":"sprites/sprHealthMeter2/sprHealthMeter2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"16205ddd-e0da-4fb6-aa84-3550fecc9f10","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"94e3045b-b43a-479c-a582-5ef94121608a","path":"sprites/sprHealthMeter2/sprHealthMeter2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f8c6353d-4a16-4938-ad53-bdee74bd700e","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

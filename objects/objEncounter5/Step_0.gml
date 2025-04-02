@@ -2,7 +2,14 @@
 	#region Dimension 1
 		if(place_meeting(x,y,objPlayer) and !encounter and !complete) {
 			encounter=true;
-	
+			ds_list_add(crates, instance_create_layer(864,1424,"Instances1",objBarrel1));
+			ds_list_add(crates, instance_create_layer(852,1424,"Instances1",objBarrel1));
+			ds_list_add(crates, instance_create_layer(840,1424,"Instances1",objBarrel1));
+			ds_list_add(crates, instance_create_layer(828,1424,"Instances1",objBarrel1));
+			ds_list_add(crates, instance_create_layer(816,1424,"Instances1",objBarrel1));
+			ds_list_add(crates, instance_create_layer(804,1424,"Instances1",objBarrel1));
+			dimensionswitch=true
+			
 			ds_list_add(tocreate1, [508,616, objFungiant]);
 			ds_list_add(tocreate1, [1168,608, objFungiant]);
 			ds_list_add(tocreate1, [1228,960, objFungiant]);

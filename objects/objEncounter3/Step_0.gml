@@ -5,42 +5,47 @@
 if(place_meeting(x,y,objPlayer) and !encounter) {
 	encounter=true;
 
-	//ds_list_add(tocreate2, [2208,640,objWizard]);
+	ds_list_add(tocreate2, [2208,640,objWizard]);
 	ds_list_add(tocreate2, [2208,816,objWizard]);
-	ds_list_add(tocreate2, [2408,816,objWizard]);
+	
 	objDimensions.maxcd=10;
 	objPlayer.hitpoints = objPlayer.maxhitpoints
 	
 	barrel1 = instance_create_layer(2780,1028,"Instances1",objBarrel1)
 	barrel2 = instance_create_layer(2780,1016,"Instances1",objBarrel1)
 	barrel3 = instance_create_layer(2780,1004,"Instances1",objBarrel1)
+	objPopup.popup=6;
 	
 }
 
 if(encounter and !dimensionswitch and objDimensions.currentdimension == 1) {
 	ds_list_add(tocreate1, [2200,936,objFungant]);
-	ds_list_add(tocreate1, [2424,848,objFungant]);
-	//ds_list_add(tocreate1, [2640,952,objFungant]);
+	
+	ds_list_add(tocreate1, [2640,952,objFungant]);
 	dimensionswitch=true;
 }
 
 if(encounter){
 	var dt=delta_time/100000;
 	progress-=dt;
-	if(buttons[colorlist[| 0]].sprite_index==sprButtonPressed){
+	if(instance_exists(buttons[colorlist[| 0]]) and buttons[colorlist[| 0]].sprite_index==sprButtonPressed){
 		progress=maxprogress
 		ds_list_delete(colorlist, 0)
+		
 		if(ds_list_size(colorlist) == 0) {
 			encounter=false;
 			instance_destroy(barrel1)
 			instance_destroy(barrel2)
 			instance_destroy(barrel3)
+			objArrow2.image_alpha=1;
 			for(var i = 0; i < ds_list_size(enemies1); i++){
 				instance_destroy(enemies1[| i])
 			}
 			for(var i = 0; i < ds_list_size(enemies2); i++){
 				instance_destroy(enemies2[| i])
 			}
+		} else {
+			objPopup.popup=6;
 		}
 	}
 	

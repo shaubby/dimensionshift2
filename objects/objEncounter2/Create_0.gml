@@ -10,3 +10,4 @@ tocreate1 = ds_list_create();
 tocreate2 = ds_list_create();
 crates=ds_list_create()
 complete = false;
+waiting = false;

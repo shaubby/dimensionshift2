@@ -1,5 +1,5 @@
 var dt = delta_time/100000;
-if(cd<=0){
+if(cd<=0 and instance_exists(objPlayer)){
 	
 	
 	if(currentdimension==1){

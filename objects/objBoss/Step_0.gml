@@ -53,7 +53,7 @@ if(active and objEncounter4.encounter) {
 						
 						#region laser1
 							if(laserstimer <= laserstimermax*2/3 and !instance_exists(laser) and !instance_exists(laser2) and !instance_exists(laser3)) {
-								laser=instance_create_layer(objPlayerHitbox.x+objPlayer.vx*random_range(predictivemin, predictivemax),objPlayerHitbox.y-8+objPlayer.vy*random_range(predictivemin, predictivemax),"Instances2",objLaser_1);
+								laser=instance_create_layer(objPlayerHitbox.x+objPlayer.vx*random_range(predictivemin, predictivemax)/dt,objPlayerHitbox.y-8+objPlayer.vy*random_range(predictivemin, predictivemax)/dt,"Instances2",objLaser_1);
 								
 								laser.image_speed=1;
 								laser.visible=true;
@@ -76,7 +76,7 @@ if(active and objEncounter4.encounter) {
 						
 						#region laser2
 							if(laserstimer <= laserstimermax*1/3 and !instance_exists(laser2) and !instance_exists(laser3)) {
-								laser2=instance_create_layer(objPlayerHitbox.x+objPlayer.vx*random_range(predictivemin, predictivemax),objPlayerHitbox.y-8+objPlayer.vy*random_range(predictivemin, predictivemax),"Instances2",objLaser_1);
+								laser2=instance_create_layer(objPlayerHitbox.x+objPlayer.vx*random_range(predictivemin, predictivemax)/dt,objPlayerHitbox.y-8+objPlayer.vy*random_range(predictivemin, predictivemax)/dt,"Instances2",objLaser_1);
 								show_debug_message(2)
 								laser2.image_speed=1;
 								laser2.visible=true;
@@ -100,7 +100,7 @@ if(active and objEncounter4.encounter) {
 						
 						#region laser3
 							if(laserstimer <= 0 and !instance_exists(laser3)) {
-								laser3=instance_create_layer(objPlayerHitbox.x+objPlayer.vx*random_range(predictivemin, predictivemax),objPlayerHitbox.y-8+objPlayer.vy*random_range(predictivemin, predictivemax),"Instances2",objLaser_1);
+								laser3=instance_create_layer(objPlayerHitbox.x+objPlayer.vx*random_range(predictivemin, predictivemax)/dt,objPlayerHitbox.y-8+objPlayer.vy*random_range(predictivemin, predictivemax)/dt,"Instances2",objLaser_1);
 								show_debug_message(3)
 								laser3.image_speed=1;
 								laser3.visible=true;

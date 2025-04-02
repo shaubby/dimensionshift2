@@ -7,7 +7,7 @@ keyUp = keyboard_check(ord("W"));
 keyDown = keyboard_check(ord("S"));
 
 
-
+if(!instance_exists(hitbox)) hitbox = instance_create_layer(x,y,"Instances1",objPlayerHitbox);
 spd = 11.5*dt;
 
 // Movement
@@ -16,6 +16,7 @@ inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 vx = lengthdir_x(spd * inputMagnitude, inputDirection);
 vy = lengthdir_y(spd * inputMagnitude, inputDirection);
 
+cd = 50
 
 
 if(objDimensions.currentdimension==1){
@@ -101,17 +102,7 @@ if(healthmeter1 >=100 and healthmeter2>=100 and hitpoints <= maxhitpoints-2) {
 	greenFlashAlpha2=50
 	audio_play_sound(sndPlayerHeal, 2, false);
 }
-if(vx!=0 or vy!=0) {
-	if(iswalking==false){
-		iswalking=true;
-		audio_sound_gain(footsteps, 1, 10);
-	}
-}else {
-	if(iswalking==true){
-		iswalking=false;
-		audio_sound_gain(footsteps, 0, 10);
-	}
-}
+
 
 	
 y += vy;
