@@ -14,11 +14,11 @@ if mouse_check_button(mb_left) and cd <=0{
 		if(objDimensions.difficulty == 1) {
 			spd=25
 			time=10
-			dmg=10
+			dmg=1000
 		} else if (objDimensions.difficulty == 2){
 			spd=30
 			time=10
-			dmg=15
+			dmg=1500
 		}
 		image_angle=dir
 	}

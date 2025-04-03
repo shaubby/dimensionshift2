@@ -738,7 +738,7 @@
           1,295,-5,297,1,298,-1380,-2147483648,1,253,-3,170,1,256,-337,-2147483648,1,295,-3,297,1,298,-520,-2147483648,
           1,253,-49,170,1,256,-291,-2147483648,1,295,-49,297,1,298,-431,-2147483648,1,253,-17,170,1,256,-323,-2147483648,
           1,295,-17,297,1,298,-41101,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_530567D9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_530567D9","objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":456.0,"y":472.0,},
         {"$GMRInstance":"v1","%Name":"inst_2A503722","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A503722","objectId":{"name":"objGun","path":"objects/objGun/objGun.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":480.0,},
@@ -1494,7 +1494,7 @@
           -2147483648,1,113,-47,114,1,111,-293,-2147483648,1,113,-47,114,1,111,-90,-2147483648,1,43,-17,170,1,
           46,-184,-2147483648,1,113,-47,114,1,111,-90,-2147483648,1,85,-17,212,1,88,-184,-2147483648,1,198,-47,
           70,1,199,-2404,-2147483648,1,43,-39831,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"DungeonTiles","depth":9400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"DungeonTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":192,"SerialiseWidth":342,"TileCompressedData":[
           -3308,-2147483648,1,589,-6,590,3,150,148,151,-27,590,1,592,-304,-2147483648,1,631,-6,632,3,107,108,105,
           -27,632,1,634,-304,-2147483648,1,631,-6,632,3,107,108,105,-27,632,1,634,-266,-2147483648,1,589,-20,590,
@@ -1572,7 +1572,7 @@
           -6,716,-2,634,-89,-2147483648,1,631,-17,632,1,634,-183,-2147483648,1,715,-49,716,1,718,-89,-2147483648,
           1,631,-17,632,1,634,-323,-2147483648,1,631,-17,632,1,634,-323,-2147483648,1,715,-17,716,1,718,-41101,
           -2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tileDungeon2","path":"tilesets/tileDungeon2/tileDungeon2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ForestTiles","depth":9500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ForestTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":192,"SerialiseWidth":342,"TileCompressedData":[
           -1256,-2147483648,-32,422,-310,-2147483648,-32,422,-308,-2147483648,-34,422,-308,-2147483648,-35,422,
           -306,-2147483648,-36,422,-306,-2147483648,-36,422,-306,-2147483648,-3,422,1,375,-6,376,3,377,422,375,

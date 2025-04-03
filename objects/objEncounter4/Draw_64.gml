@@ -8,7 +8,7 @@ if(encounter) {
 	}
 	
 	if(stage == 2 or stage == 4 or stage == 6) {
-		if(color == 1 or color  == 3 or color == 5) {
+		if(color == 0 or color  == 2 or color == 4) {
 			
 			draw_sprite_ext( sprEnemyCount1, 0, 1850, 120, 6, 6, 0, c_white, .7);
 			draw_set_alpha(1);
